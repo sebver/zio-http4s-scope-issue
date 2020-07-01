@@ -20,7 +20,7 @@ object Main extends App with Http4sDsl[Task] {
   val serverManaged: ZManaged[Any, Throwable, Unit] = server(
     HttpRoutes.of[Task] {
       case GET -> Root / "status" =>
-        Ok()
+        Ok("Alive")
     })
 
   override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] =
