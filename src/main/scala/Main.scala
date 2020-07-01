@@ -14,8 +14,7 @@ import scala.concurrent.ExecutionContext
 object Main extends App with Http4sDsl[Task] {
 
   override val platform =
-    Platform.default.withReportFailure(cause =>
-      if (!cause.interrupted) println(cause.prettyPrint))
+    Platform.default.withReportFailure(cause => println(cause.prettyPrint))
 
   val serverManaged: ZManaged[Any, Throwable, Unit] = server(
     HttpRoutes.of[Task] {

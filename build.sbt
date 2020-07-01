@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   "org.http4s"   %% "http4s-core"               % http4sVersion,
   "org.http4s"   %% "http4s-dsl"                % http4sVersion,
   "org.http4s"   %% "http4s-blaze-server"       % http4sVersion,
+  "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
 
 enablePlugins(JavaAppPackaging)
