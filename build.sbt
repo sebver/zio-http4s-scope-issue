@@ -4,8 +4,8 @@ version := "0.1"
 
 scalaVersion := "2.13.2"
 
-val zioVersion            = "1.0.0-RC21-2"
-val zioInteropCatsVersion = "2.1.4.0-RC17"
+val zioVersion            = "1.0.0-RC20"
+val zioInteropCatsVersion = "2.1.3.0-RC15"
 val http4sVersion         = "0.21.6"
 
 fork in run := true
